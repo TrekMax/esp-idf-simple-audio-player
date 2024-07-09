@@ -36,6 +36,12 @@ These can be arbitrary pins as there is no "dedicated I2S bus" pins on the ESP32
 - Word clock is connected to GPIO pin 19
 - Data Out is connected to GPIO pin 23
 
+| ESP32S3 |  |PCM5102a | |
+| ------------- | -------- | ------------- | -------- |
+| GPIO 38 | I2S_BLK_PIN     | Bit Clock | BCK |
+| GPIO 41 | I2S_WS_PIN      | Word Clock | LRCK/LCK |
+| GPIO 40 | I2S_DATA_OUT_PIN | Data Out | DIN |
+
 _again you can change this in [configuration.h](main/configuration.h)_
 
 ### WAV File settings

@@ -25,21 +25,21 @@
 #pragma once
 
 #include <stdio.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_system.h"
 #include "esp_mac.h"
 #include "esp_chip_info.h"
 #include "esp_log.h"
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_system.h"
 #include "driver/gpio.h"
 #include "driver/i2s_std.h"
 
-// Pin Configurations
-
 // I2S Configuration
-#define I2S_BLK_PIN			GPIO_NUM_5
-#define I2S_WS_PIN			GPIO_NUM_19
-#define I2S_DATA_OUT_PIN	GPIO_NUM_23
+#define I2S_BLK_PIN			GPIO_NUM_38
+#define I2S_WS_PIN			GPIO_NUM_41
+#define I2S_DATA_OUT_PIN	GPIO_NUM_40
+
 #define I2S_DATA_IN_PIN 	I2S_GPIO_UNUSED
 #define I2S_SCLK_PIN 		I2S_GPIO_UNUSED
 
